@@ -63,7 +63,7 @@ After defining all the profiles, we can create the appsettings.json for each of 
 
 Now it is possible to define the individual configuration for each environment, as a connection string.
 
-##Step Three - Set the environment file to read
+## Step Three - Set the environment file to read
 
 At this point, we just need to change our Startup.cs to read the appsettings depeding on the profile. 
 
