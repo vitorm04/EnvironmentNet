@@ -2,9 +2,11 @@
 
 **.NET Core** can offer many resources for developers and one of them is the possibility to set enviroments to work in. Imagine  you have 3 kinds of environments (Production, Development and QA) and you need to set different connection strings for each of them. How to configure this stack? The first thought would be to change the file with the connection before each deploy. It works, but over the course of time it becomes hard and failures can happen. But there is a simple way to do it with less risks for your application: through using profiles configuration.
 
-##Step One - LaunchSettings.json
+## Step One - LaunchSettings.json
 
 The file launchSettings.json is responsible for defining the available profiles in your application. There is a common profile already configured (Development), so we need to insert two more to support our stack, as follow:
+
+    
     {
       "$schema": "http://json.schemastore.org/launchsettings.json",
       "iisSettings": {
@@ -53,7 +55,7 @@ The file launchSettings.json is responsible for defining the available profiles 
     }
 	
 
-##Step Two - AppSettings.Environmet.json
+## Step Two - AppSettings.Environmet.json
 
 After defining all the profiles, we can create the appsettings.json for each of them. They must have the same name of ASPNETCORE_ENVIRONMENT for their environment.
 
@@ -67,7 +69,7 @@ At this point, we just need to change our Startup.cs to read the appsettings dep
 
 ![](https://i.ibb.co/26NpBTZ/Sem-t-tulo.png)
 
-##Step Four - Build
+## Step Four - Build
 
 After all these steps, the application is ready to run with many environments, the final step is to choose one of them.
 
