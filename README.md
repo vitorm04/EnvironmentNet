@@ -71,6 +71,6 @@ At this point, we just need to change our Startup.cs to read the appsettings dep
 
 ## Step Four - Build
 
-After all these steps, the application is ready to run with many environments, the final step is to choose one of them.
+After all these steps, the application is ready to run with many environments.
 
 ![](https://i.ibb.co/dgwhVby/Sem-t-tulo.png)
